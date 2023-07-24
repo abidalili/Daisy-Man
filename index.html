@@ -12,6 +12,17 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-bg": "url('./images/yellow-bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- Header Section -->
@@ -77,6 +88,24 @@
           </div>
         </div>
       </nav>
+      <!-- Hero Section -->
+      <section>
+        <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Welcome To DaisyMan</h1>
+              <p class="mb-5">
+                Your one-stop destination for all your fashion needs. At
+                DaisyMan, we believe that style is a reflection of your unique
+                personality and our mission is to provide you with a diverse and
+                trendy collection.
+              </p>
+              <button class="btn">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
